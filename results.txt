@@ -1,0 +1,29 @@
+# LOCAL RESULTS 10 DB ENTRIES
+echo "GET http://localhost:8080/get/10" | vegeta attack -duration=5s | tee results.bin | vegeta report
+2.191ms
+2.129ms
+2.105ms
+2.069ms
+2.085ms
+
+MEAN TIME = 2.1158ms
+
+# LOCAL RESULTS 100 DB ENTRIES
+echo "GET http://localhost:8080/get/100" | vegeta attack -duration=5s | tee results.bin | vegeta report
+2.378ms
+2.377ms
+2.302ms
+2.294ms
+2.251ms
+
+MEAN TIME = 2.3204ms
+
+# LOCAL RESULTS 1000 DB ENTRIES
+echo "GET http://localhost:8080/get/1000" | vegeta attack -duration=5s | tee results.bin | vegeta report
+4.233ms
+4.175ms
+4.182ms
+3.99ms
+4.372ms
+
+MEAN TIME = 4.1904ms
